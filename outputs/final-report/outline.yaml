@@ -1,0 +1,77 @@
+# Outline of the WP5 final report (top-down perspective).
+#
+# This file decides WHAT goes WHERE. It contains no framework content itself.
+# Section types:
+#   text:      short fixed sentence(s) written here (keep to navigation text)
+#   static:    a Markdown file next to this outline (for chapters that are not
+#              framework nodes, e.g. the introduction)
+#   include:   explicit list of node ids, in this order
+#   select:    all nodes matching level / task / group
+#   hierarchy: Level 3 structure: for each leading principle, the guidance
+#              from other tasks that links to it (via realises/supports)
+#   assessment_table: table of the `assessment` field on Level 3 nodes
+#
+# Build:  python tools/wp5.py report outputs/final-report/outline.yaml --formats docx
+
+name: final-report
+title: "AIML4OS WP5 - Standards, methodological and implementation frameworks for AI/ML in official statistics (DRAFT)"
+
+sections:
+  - title: "1. Need for standards, sound methodology and a good implementation framework"
+    static: static/01-introduction.md
+
+  - title: "2. From where we derive our principles (Level 0)"
+    sections:
+      - title: "2.1 Task 1 (Quality): FPOS, CoP, QAF, European legislation"
+        select: {level: 0, task: "5.1"}
+      - title: "2.2 Task 2 (Methodology)"
+        select: {level: 0, task: "5.2"}
+      - title: "2.3 Task 3 (Implementation)"
+        select: {level: 0, task: "5.3"}
+
+  - title: "3. Principles - what we want to achieve (Level 1)"
+    sections:
+      - title: "3.1 Task 1 principles"
+        sections:
+          - title: "3.1.1 Quality dimensions"
+            select: {level: 1, task: "5.1", group: quality-dimension}
+          - title: "3.1.2 Ethical principles"
+            select: {level: 1, task: "5.1", group: ethics}
+          - title: "3.1.3 Legal framework"
+            select: {level: 1, task: "5.1", group: legal}
+      - title: "3.2 Task 2 principles"
+        select: {level: 1, task: "5.2"}
+      - title: "3.3 Task 3 principles"
+        select: {level: 1, task: "5.3"}
+
+  - title: "4. Guidelines - how to achieve the principles and ways of working (Level 2, checklist)"
+    sections:
+      - title: "4.1 Task 1 guidelines"
+        select: {level: 2, task: "5.1"}
+      - title: "4.2 Task 2 guidelines"
+        select: {level: 2, task: "5.2"}
+      - title: "4.3 Task 3 guidelines"
+        select: {level: 2, task: "5.3"}
+      - title: "4.4 Cross-cutting"
+        select: {level: 2, task: cross}
+
+  - title: "5. Practical guidance - what the guidelines mean in practice (Level 3, Task 1 as leading principle)"
+    text: >
+      For each Task 1 principle, this chapter lists the guidance from Task 2 and
+      Task 3 that is linked to it. Each item is written out once and referred to
+      afterwards.
+    hierarchy:
+      lead: {level: 1, task: "5.1", group: quality-dimension}
+      from_tasks: ["5.2", "5.3"]
+      levels: [2, 3]
+      unlinked_heading: "Principles/guidelines from Task 2 and 3 without intersection to Task 1 principles"
+
+  - title: "6. Assessment of the practical guidance with respect to the AIML4OS project"
+    text: >
+      Scale: not relevant; research gap; C - only literature reference;
+      B - literature reference and (covered by WP 5.2/5.3 or applied/tested by another WP);
+      A - literature reference and covered by WP 5.2/5.3 and applied/tested by another WP.
+    assessment_table: true
+
+  - title: "7. Summary and conclusion"
+    static: static/07-conclusion.md

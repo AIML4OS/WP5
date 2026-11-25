@@ -1,0 +1,31 @@
+# Outline of a bottom-up "What do I need to do?" guide.
+#
+# Same source files as the final report, different order: starts from the
+# practical level and only refers upwards to principles. This outline is a
+# first sketch to show that several outputs can be built from one source.
+
+name: practitioner-guide
+title: "What do I need to do? Practical guide to AI/ML in statistical production (DRAFT SKETCH)"
+
+sections:
+  - title: "1. How to use this guide"
+    text: >
+      Start from the practical guidance and checklists. Each item links to the
+      principle it helps achieve, so you can see why it matters.
+
+  - title: "2. Practical guidance"
+    select: {level: 3}
+
+  - title: "3. Checklists and ways of working"
+    sections:
+      - title: "3.1 Quality checklists"
+        select: {level: 2, task: "5.1"}
+      - title: "3.2 Methodology"
+        select: {level: 2, task: "5.2"}
+      - title: "3.3 Implementation"
+        select: {level: 2, task: "5.3"}
+      - title: "3.4 Documentation across tasks"
+        select: {level: 2, task: cross}
+
+  - title: "4. Why: the principles behind the guidance"
+    select: {level: 1}

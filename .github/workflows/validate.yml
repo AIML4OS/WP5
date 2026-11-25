@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Validate nodes and links
+        run: python tools/wp5.py validate
+      - name: Install pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Build all outputs
+        run: python tools/wp5.py all --formats docx
+      - name: Upload outputs for reviewers
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp5-outputs
+          path: build/

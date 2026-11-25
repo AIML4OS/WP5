@@ -1,0 +1,13 @@
+# Reviewers per task folder. A pull request that changes files in a folder
+# requests review from the owners listed here.
+#
+# TODO: replace the placeholders with the GitHub handles (or teams) of each
+# task group, then uncomment. Example:
+#   /framework/**/quality/          @handle-a @handle-b
+#
+# /framework/**/quality/            @<task-5.1-reviewers>
+# /framework/**/methodology/        @<task-5.2-reviewers>
+# /framework/**/implementation/     @<task-5.3-reviewers>
+# /framework/cross-cutting/         @<wp5-coordinators>
+# /outputs/                         @<wp5-coordinators>
+# /tools/  /.github/  /AGENTS.md    @<repository-maintainers>
