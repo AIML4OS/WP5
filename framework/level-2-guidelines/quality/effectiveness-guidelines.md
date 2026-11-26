@@ -11,23 +11,20 @@ reviewers: []
 sources:
   - ref: wp51-final-2026-10
     locator: "Section 2.4.4"
-  - ref: wp51-quality-guidelines-working
-    locator: "Earlier version of the same checklist"
 relations:
   realises: [L1-QUA-EFFECTIVENESS]
+  related: [L2-QUA-QUALITY-GUIDELINES]
 ai_assisted: true
 order: 40
 ---
 
-> **Example content** seeded from the WP5 working documents during repository setup. The text is taken from the cited sources and has not yet been reviewed by the task group.
+> **Example content.** Text reproduced from the WP 5.1 final document (version of 29.10.2026), Section 2.4.4. Only the layout was changed (line breaks, lists, tables). Not yet reviewed by Task 5.1.
 
-Use as a checklist: for each application, record a status per guideline (*completed/observed*, *not completed/not observed*, *not relevant* with justification) and review it periodically over the lifecycle (WP 5.1, Section 2.4).
-
-The expected benefits should be stated in advance, and the outcome compared to the expectations.
+Saidani et al. (2023), Saidani and Dumpert (2025) emphasize that the expectations for gains from an AI/ML application need to be realistic and the importance of capturing usage expectations in advance. Moreover, it is suggested that a PoC should be carried out to estimate possible gains. Following these previous developments, we recommend that the expected benefits are stated in advance, and that the outcome is compared to the expectations.
 
 | ID | Guideline | Important building blocks |
 |---|---|---|
-| C1 | Systematically collect requirements for the AI/ML application. | Maintain a requirements document that distinguishes goals, constraints and success criteria. |
-| C2 | Assess the feasibility of the project. If the prospects of fulfilling the requirements are low, or an assessment is difficult, carry out a feasibility study (e.g. use case, proof of concept). | Early feasibility assessment of data availability, technical complexity and organisational readiness. Limited exploratory study of key requirements. |
-| C3 | Forecast the expected benefits and compare them to the current situation. | Map current conditions and the expected improvement. Clarify the assumptions behind the benefit calculations. |
-| C4 | Carry out a post-hoc cost-benefit analysis of the AI/ML application. | Compare realised outcomes against expected benefits. Review whether benefits justify costs for development, operation and maintenance. |
+| C1 | Systematically collect requirements for the AI/ML application. | Maintain a requirements document that clearly distinguishes goals, constraints, and success criteria. |
+| C2 | Assess the feasibility of the project. If the prospects of fulfilling the requirements are low, or if an assessment is difficult to make, carry out a feasibility study (e.g. use case, proof of concept). | Perform an early feasibility assessment addressing data availability, technical complexity, and organizational readiness.<br>Carry out a limited exploratory study to test whether key requirements can realistically be met. |
+| C3 | Forecast the expected benefits and compare them to the current situation. | Map the current conditions and describe how the AI/ML application is expected to improve them.<br>Clarify the assumptions underlying the calculations of expected benefits. |
+| C4 | Carry out a post-hoc cost-benefit analysis of the AI/ML application. | Compare realized outcomes against expected benefits.<br>Review whether benefits justify costs for development, operation, and maintenance. |

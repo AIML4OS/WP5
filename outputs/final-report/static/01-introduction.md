@@ -1,4 +1,3 @@
-<!-- Introduction chapter of the final report. Not a framework node.
-     To be written by the WP5 group. Possible source: wp51-final-2026-10, Section 1. -->
-
-_To be written._
+<!-- Introduction chapter of the final report. The WP 5.1 introduction (Section 1 of the
+     WP 5.1 final document) is included below as node L0-QUA-NEED-FOR-STANDARDS.
+     A WP5-wide introduction covering all three tasks is still to be written. -->
