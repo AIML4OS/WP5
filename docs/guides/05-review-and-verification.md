@@ -29,6 +29,15 @@ Reviewers check:
 - [ ] **AI-assisted changes** (`ai_assisted: true`): read the whole diff, not only the summary.
 - [ ] **Status**: set `in-review` or `agreed` only when the group has decided.
 
+**Checking against a source document.** `tools/source_coverage.py` compares nodes with the plain text of a source. It lists source sentences that are missing from the nodes, and node sentences that are not in the source (possible additions or paraphrases):
+
+```bash
+pdftotext -layout "WP 5.1 - final document.pdf" wp51.txt
+python tools/source_coverage.py wp51.txt framework/level-*/quality/*.md framework/cross-cutting/*.md
+```
+
+Tables, headings and fixed typos show up as noise. Use the lists as a guide for what to look at, not as a verdict.
+
 Use GitHub's **suggestion** feature for small wording changes and comment threads for questions. Keep the discussion in the PR so the reasoning stays with the text.
 
 ## 3. Reviewing generated outputs

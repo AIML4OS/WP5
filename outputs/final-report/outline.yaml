@@ -19,11 +19,18 @@ title: "AIML4OS WP5 - Standards, methodological and implementation frameworks fo
 sections:
   - title: "1. Need for standards, sound methodology and a good implementation framework"
     static: static/01-introduction.md
+    include: [L0-QUA-NEED-FOR-STANDARDS]
 
   - title: "2. From where we derive our principles (Level 0)"
     sections:
       - title: "2.1 Task 1 (Quality): FPOS, CoP, QAF, European legislation"
-        select: {level: 0, task: "5.1"}
+        sections:
+          - title: "2.1.1 ESS quality framework"
+            select: {level: 0, task: "5.1", group: quality-framework}
+          - title: "2.1.2 Ethics"
+            select: {level: 0, task: "5.1", group: ethics}
+          - title: "2.1.3 Legal frameworks"
+            select: {level: 0, task: "5.1", group: legal}
       - title: "2.2 Task 2 (Methodology)"
         select: {level: 0, task: "5.2"}
       - title: "2.3 Task 3 (Implementation)"
@@ -47,7 +54,11 @@ sections:
   - title: "4. Guidelines - how to achieve the principles and ways of working (Level 2, checklist)"
     sections:
       - title: "4.1 Task 1 guidelines"
-        select: {level: 2, task: "5.1"}
+        sections:
+          - title: "4.1.1 Quality guidelines (checklist)"
+            select: {level: 2, task: "5.1", group: quality-guidelines}
+          - title: "4.1.2 Legal: AI Act in practice"
+            select: {level: 2, task: "5.1", group: legal}
       - title: "4.2 Task 2 guidelines"
         select: {level: 2, task: "5.2"}
       - title: "4.3 Task 3 guidelines"

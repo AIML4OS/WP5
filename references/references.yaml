@@ -77,3 +77,41 @@ references:
     author: "Golpayegani, D. et al."
     date: 2024
     note: "Cited in wp51-final-2026-10, Section 5 as Golpayegani D. et al., 2024."
+
+  # Literature cited in wp51-final-2026-10, Section 2.2 and the reference list
+  # at the end of that document (marked there as "References (to be checked)").
+  - key: reinert-et-al-2016
+    type: literature
+    title: "Work Package 1: Checklist for Evaluating the Quality of Input Data"
+    author: "Reinert, R., et al."
+    date: 2016
+    note: "ESSnet KOMUSO."
+
+  - key: de-waal-et-al-2019
+    type: literature
+    title: "Quality measures for multisource statistics"
+    author: "De Waal, T., et al."
+    date: 2019
+    note: "Statistical Journal of the IAOS 35.2."
+
+  - key: kowarik-et-al-2020
+    type: literature
+    title: "Deliverable K3: Revised Version of the Quality Guidelines for the Acquisition and Usage of Big Data"
+    author: "Kowarik, A., et al."
+    date: 2020
+    note: "Work Package K Methodology and quality, ESSnet Big Data II."
+
+  - key: kowarik-et-al-2025
+    type: literature
+    title: "Deliverable 4.5: Quality Guidelines for acquiring and using web scraped data"
+    author: "Kowarik, A., et al."
+    date: 2025
+    note: "Work Package 4 Methodology and quality, ESSnet Trusted Smart Statistics - Web Intelligence Network."
+
+  - key: van-delden-et-al-2023
+    type: literature
+    title: "Ten Propositions on Machine Learning in Official Statistics"
+    author: "Van Delden, A., Burger, J. & Puts, M."
+    date: 2023
+    url: "https://doi.org/10.1007/s11943-023-00330-0"
+    note: "AStA Wirtschafts- und Sozialstatistisches Archiv 17 (3): 195-221."
