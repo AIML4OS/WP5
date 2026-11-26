@@ -1,0 +1,35 @@
+# Wiki built from the same files as the reports.
+# The pages are generated into build/wiki by `python tools/wp5.py wiki`.
+site_name: AIML4OS WP5 framework
+site_description: Standards, methodological and implementation frameworks for AI/ML in official statistics (work in progress)
+repo_url: https://github.com/AIML4OS/WP5
+edit_uri: ""
+docs_dir: build/wiki
+site_dir: site
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - Home: index.md
+  - Framework: framework/index.md
+  - Guides:
+      - docs/guides/01-overview.md
+      - docs/guides/02-contribute-with-git.md
+      - docs/guides/03-contribute-with-ai.md
+      - docs/guides/04-node-format.md
+      - docs/guides/05-review-and-verification.md
+      - docs/guides/06-generate-outputs.md
+      - docs/guides/07-wiki-and-ai-ready.md

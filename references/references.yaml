@@ -1,0 +1,79 @@
+# Sources that framework nodes may cite in their `sources:` field.
+#
+# Two kinds of entries:
+#   type: wp5-draft   - internal WP5 working documents (the material the
+#                       framework text is taken from)
+#   type: literature  - published external sources
+#
+# Add an entry here before citing it in a node. The validator rejects
+# `sources:` refs that are not listed here.
+
+references:
+  - key: wp51-final-2026-10
+    type: wp5-draft
+    title: "WP 5.1 - Final document (long version)"
+    author: "AIML4OS WP 5.1"
+    date: 2026-10-29
+    note: "Consolidated by Florian; moved from SharePoint to GitHub on 29.10.2026."
+
+  - key: wp53-paper-tech-perspectives
+    type: wp5-draft
+    title: "Technical perspectives on quality of the use of AI in official statistics"
+    author: "Engdahl, J. & Malmros, J. (Statistics Sweden)"
+    date: 2026
+    note: "Paper from the implementation perspective (Task 5.3)."
+
+  - key: wp51-quality-guidelines-working
+    type: wp5-draft
+    title: "Quality guidelines working document"
+    author: "AIML4OS WP 5.1"
+    note: "Earlier list of quality dimensions and guidelines (A1-A6, R1-R5, E1-E3, P1-P6, T1-T3, C1-C4). Superseded in part by wp51-final-2026-10."
+
+  - key: saidani-dumpert-2025
+    type: literature
+    title: "(title to be completed by Task 5.1)"
+    author: "Saidani, Y. & Dumpert, F."
+    date: 2025
+    note: "Cited in wp51-final-2026-10. Full reference to be completed by Task 5.1."
+
+  - key: saidani-et-al-2023
+    type: literature
+    title: "Qualitätsdimensionen maschinellen Lernens in der amtlichen Statistik"
+    author: "Saidani, Y., Dumpert, F., Borgs, C. et al."
+    date: 2023
+    url: "https://doi.org/10.1007/s11943-023-00329-7"
+
+  - key: yung-et-al-2022
+    type: literature
+    title: "A quality framework for statistical algorithms"
+    author: "Yung, W., Siu-Ming, T., Buelens, B. et al."
+    date: 2022
+    note: "Statistical Journal of the IAOS 38, 291-308."
+
+  - key: ai-hleg-2019
+    type: literature
+    title: "Ethical Guidelines for Trustworthy AI (as cited in wp51-final-2026-10)"
+    author: "European Commission High-Level Expert Group on AI"
+    date: 2019
+
+  - key: regulation-223-2009
+    type: literature
+    title: "Regulation (EC) No 223/2009 on European statistics"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R0223-20241226"
+
+  - key: ai-act-2024
+    type: literature
+    title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act)"
+    date: 2024
+
+  - key: es-cop
+    type: literature
+    title: "European Statistics Code of Practice"
+    url: "https://ec.europa.eu/eurostat/web/quality/european-quality-standards/european-statistics-code-of-practice"
+
+  - key: golpayegani-2024
+    type: literature
+    title: "AI Cards (full reference to be completed)"
+    author: "Golpayegani, D. et al."
+    date: 2024
+    note: "Cited in wp51-final-2026-10, Section 5 as Golpayegani D. et al., 2024."
